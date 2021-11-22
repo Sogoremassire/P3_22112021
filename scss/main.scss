@@ -16,4 +16,25 @@ body{
     
     font-family: 'Shrikhand', sans-serif;
 }
+// reglage de la position du menu
+
+
+// reglage du header
+.head-bar{
+    margin: 35px 0;
+    @include flexCenter(column);
+    &__icone{
+        margin-top: 15px;
+        font-size: 1.1rem;
+        width: 100%;
+        @include flexCenter(row);
+        padding-right: 47px;
+        box-shadow: 5px 1px 1px lighten(#000, 90%);
+        height: 50px;
+        background-color: lighten(#000, 92%);
+    };
+    &__paragraph{
+        padding-left: 18px;
+    }
+}
 

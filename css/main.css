@@ -242,4 +242,28 @@ body {
   font-family: "Shrikhand", sans-serif;
 }
 
+.head-bar {
+  margin: 35px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head-bar__icone {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 47px;
+  box-shadow: 5px 1px 1px #e6e6e6;
+  height: 50px;
+  background-color: #ebebeb;
+}
+.head-bar__paragraph {
+  padding-left: 18px;
+}
+
 /*# sourceMappingURL=main.css.map */

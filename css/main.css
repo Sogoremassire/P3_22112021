@@ -238,32 +238,15 @@ body {
   font-family: "Roboto";
 }
 
-.title {
+.head {
+  text-align: center;
+  box-shadow: 0.5px 0.5px 4px #404040;
+}
+.head__title {
   font-family: "Shrikhand", sans-serif;
-}
-
-.head-bar {
-  margin: 35px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.head-bar__icone {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-right: 47px;
-  box-shadow: 5px 1px 1px #e6e6e6;
-  height: 50px;
-  background-color: #ebebeb;
-}
-.head-bar__paragraph {
-  padding-left: 18px;
+  font-size: 2rem;
+  margin: 0;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

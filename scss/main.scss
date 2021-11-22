@@ -1,0 +1,19 @@
+// normalisation du code css
+@import "normalize";
+
+
+@import "mixin";
+@import "variable";
+@import "function";
+
+// importation de la typographie
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+body{
+    @include fontFamily();
+}
+.title{
+    
+    font-family: 'Shrikhand', sans-serif;
+}
+

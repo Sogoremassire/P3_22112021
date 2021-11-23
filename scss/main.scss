@@ -47,7 +47,7 @@ body{
 .main-bloc{
     padding: 2.5rem;
     background-color: #fafafaea;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
     &__title{
         font-weight: bold;
@@ -58,3 +58,17 @@ body{
     }
 }
 
+// reglage du bouton
+
+.search{
+    border: none;
+    margin: 20px;
+  &__btn{
+    background-image: linear-gradient($primary-color, $secondary-color);
+    border: none;
+    height: 60px;
+    border-radius: 30px;
+    color: #FFF;
+    padding: 0 20px;
+  }
+}

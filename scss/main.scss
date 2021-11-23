@@ -64,11 +64,18 @@ body{
     border: none;
     margin: 20px;
   &__btn{
-    background-image: linear-gradient($primary-color, $secondary-color);
+    background-image: linear-gradient(to top, $primary-color, $secondary-color);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.57);
     border: none;
     height: 60px;
     border-radius: 30px;
     color: #FFF;
     padding: 0 20px;
+    font-size: 1.2rem;
+    transition: 1.5s;
+    &:hover{
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
   }
 }

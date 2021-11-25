@@ -214,3 +214,27 @@ body{
 .marg-rest{
     margin: 1rem 0 0.4rem 1rem;
 }
+
+//Footer
+
+.footer{
+    background: #353535;
+    padding: 2rem;
+    @media (max-width:846px){
+        padding: 0;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__lien{
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+.titre-footer{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.3rem;
+    position: relative;
+    left: 2.3rem;
+    
+}

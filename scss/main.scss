@@ -47,7 +47,7 @@ body{
 .main-bloc{
     padding: 2.5rem;
     background-color: #fafafaea;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     &__title{
         font-weight: bold;
@@ -83,13 +83,14 @@ body{
 // Reglage des filtres
 .filtres{
     display: block;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     &__lists{
+        counter-reset: step;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: row;
-        @media (max-width:846px){
+        @media (max-width:882px){
             flex-direction: column;
         }
     }
@@ -109,43 +110,107 @@ body{
     &__icone{
         color: #7e7e7e;
     }
+    &__list::before{
+        counter-increment: step;
+        content: counter(step);
+        height: 1.5rem;
+        width: 1.5rem;
+        background: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        border-radius: 100px;
+        position: absolute;
+        left: -0.75rem;
+    }
 }
-.before-1::before{
-    content: "1";
-    height: 1.5rem;
-    width: 1.5rem;
-    background: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    border-radius: 100px;
-    position: absolute;
-    left: -0.75rem;
+
+// restaurants
+
+.restaurants{
+    background-color: #F6F6F6;
+    margin: 2rem 1rem;
+    @media (max-width:886px){
+        margin: 0;
+    }
 }
-.before-2::before{
-    content: "2";
-    height: 1.5rem;
-    width: 1.5rem;
-    background: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    border-radius: 100px;
-    position: absolute;
-    left: -0.75rem;
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding: 2.5rem;
+    @media (max-width:780px){
+       padding: 1.2rem;
+    }
 }
-.before-3::before{
-    content: "3";
-    height: 1.5rem;
-    width: 1.5rem;
-    background: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    border-radius: 100px;
-    position: absolute;
-    left: -0.75rem;
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    @media (max-width:886px){
+        grid-template-columns: 1fr;
+    }
+}
+.card{
+    background-color: #FFF;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    &__img-1{
+        background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 12rem;
+        border-radius: 1rem 1rem 0 0;
+        position: relative;
+    };
+    &__new{
+        margin: 0;
+        position: absolute;
+        right: 0;
+        background-color: #99E2D0;
+        margin: 0.8rem 0.5rem 0 0;
+        padding:0.5rem 1rem ;
+        border-radius: .2rem;
+        text-decoration: none;
+    }
+
+    &__img-2{
+        @extend .card__img-1;
+        background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+    &__img-3{
+        @extend .card__img-1;
+        background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+    &__img-4{
+        @extend .card__img-1;
+        background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+    &__art{
+        position: relative;
+    }
+    &__lien{
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+    &__heart{
+        position: absolute;
+        right: 0;
+        top: 0.9rem;
+        margin-right: 1.2rem;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        color: rgba(0,0,0,0.2);
+        transition: 1s;
+    }
+    &__heart:hover{
+        color: $primary-color;
+        
+    }
+}
+
+.marg-rest{
+    margin: 1rem 0 0.4rem 1rem;
 }

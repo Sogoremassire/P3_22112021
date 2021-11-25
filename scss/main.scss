@@ -79,3 +79,73 @@ body{
     }
   }
 }
+
+// Reglage des filtres
+.filtres{
+    display: block;
+    padding: 2rem 1rem;
+    &__lists{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        @media (max-width:846px){
+            flex-direction: column;
+        }
+    }
+    &__list{
+        position: relative;
+        list-style: none;
+        padding: 1.5rem;
+        margin: 1rem 1rem 1rem 0.75rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+        border-radius: 1.25rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-grow: 1;
+        background: #F6F6F6;
+    }
+    &__icone{
+        color: #7e7e7e;
+    }
+}
+.before-1::before{
+    content: "1";
+    height: 1.5rem;
+    width: 1.5rem;
+    background: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 100px;
+    position: absolute;
+    left: -0.75rem;
+}
+.before-2::before{
+    content: "2";
+    height: 1.5rem;
+    width: 1.5rem;
+    background: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 100px;
+    position: absolute;
+    left: -0.75rem;
+}
+.before-3::before{
+    content: "3";
+    height: 1.5rem;
+    width: 1.5rem;
+    background: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 100px;
+    position: absolute;
+    left: -0.75rem;
+}

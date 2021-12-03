@@ -250,10 +250,17 @@ body {
   margin: 0;
   padding: 15px;
 }
-.head__localisation {
+@media screen and (max-width: 377px) {
+  .head__title .fa-arrow-left {
+    position: relative;
+    right: 60px;
+  }
+}
+.head__description {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0;
   background-color: #c9c7c750;
-  font-size: 1.2rem;
-  height: 50px;
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;

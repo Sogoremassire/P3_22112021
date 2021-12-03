@@ -2,6 +2,12 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color: #99E2D0;
+$breakPoint:(
+    phone: 377px,
+    tablet: 1024px,
+    desktop: 1200px,
+    desktop-land: 1440px
+);
 
 
 // fonts

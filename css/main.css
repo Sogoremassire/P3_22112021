@@ -223,6 +223,7 @@ table {
 
 input[type=search] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
@@ -230,8 +231,7 @@ input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-se
   -webkit-appearance: none;
 }
 input[type=checkbox], input[type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -244,8 +244,7 @@ body {
 }
 .head__title {
   text-align: center;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
   font-family: "Shrikhand", sans-serif;
   font-size: 2rem;
   margin: 0;
@@ -255,23 +254,14 @@ body {
   background-color: #c9c7c750;
   font-size: 1.2rem;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-map-marker-alt:before {
-  content: "";
+  content: "\f3c5";
   margin-right: 22px;
 }
 
@@ -298,23 +288,19 @@ body {
   margin: 20px;
 }
 .search__btn {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.57);
-          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.57);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.57);
   border: none;
   height: 60px;
   border-radius: 30px;
   color: #FFF;
   padding: 0 20px;
   font-size: 1.2rem;
-  -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 .search__btn:hover {
   opacity: 0.9;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .filtres {
@@ -325,20 +311,12 @@ body {
   counter-reset: step;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 @media (max-width: 882px) {
   .filtres__lists {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .filtres__list {
@@ -346,19 +324,12 @@ body {
   list-style: none;
   padding: 1.5rem;
   margin: 1rem 1rem 1rem 0.75rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
-          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   border-radius: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  align-items: center;
+  flex-grow: 1;
   background: #F6F6F6;
 }
 .filtres__icone {
@@ -370,15 +341,9 @@ body {
   height: 1.5rem;
   width: 1.5rem;
   background: #9356DC;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #FFF;
   border-radius: 100px;
   position: absolute;
@@ -467,7 +432,6 @@ body {
   border: none;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: 1s;
   transition: 1s;
 }
 .card__heart:hover {
@@ -475,7 +439,7 @@ body {
 }
 
 .marg-rest {
-  margin: 1rem 0 0.4rem 1rem;
+  margin: 1rem 0px 0.4rem 1rem;
 }
 
 .footer {
@@ -501,3 +465,5 @@ body {
   position: relative;
   left: 2.3rem;
 }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,3 @@
-@mixin fontFamily($font: 'Roboto') {
-    font-family: $font;
-};
 
 @mixin flexCenter($direction) {
     display: flex;

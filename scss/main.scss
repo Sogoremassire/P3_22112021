@@ -1,17 +1,17 @@
 // normalisation du code css
-@import "normalize";
+@use "normalize";
 
 
-@import "mixin";
-@import "variable";
-@import "function";
+@use "mixin";
+@use "variable";
+@use "function";
 
 // importation de la typographie
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;700;900&display=swap');
 
 body{
-    @include fontFamily();
+   font-family: $text-font;
 }
 
 // reglage de la position du menu
@@ -68,7 +68,7 @@ body{
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.57);
     border: none;
     height: 60px;
-    border-radius: 30px;
+    border-radius: unitize(30);
     color: #FFF;
     padding: 0 20px;
     font-size: 1.2rem;
@@ -98,9 +98,9 @@ body{
         position: relative;
         list-style: none;
         padding: 1.5rem;
-        margin: 1rem 1rem 1rem 0.75rem;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-        border-radius: 1.25rem;
+        margin: unitize(1rem 1rem 1rem 0.75rem);
+        box-shadow: unitize(0.25rem 0.25rem 0.5rem) rgb(0 0 0 / 13%);
+        border-radius: unitize(1.25rem);
         display: flex;
         gap: 1rem;
         align-items: center;
@@ -113,16 +113,16 @@ body{
     &__list::before{
         counter-increment: step;
         content: counter(step);
-        height: 1.5rem;
-        width: 1.5rem;
+        height: unitize(1.5rem);
+        width: unitize(1.5rem);
         background: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #FFF;
-        border-radius: 100px;
+        border-radius: unitize(100);
         position: absolute;
-        left: -0.75rem;
+        left: unitize(-0.75rem);
     }
 }
 
@@ -130,7 +130,7 @@ body{
 
 .restaurants{
     background-color: #F6F6F6;
-    margin: 2rem 1rem;
+    margin: unitize(2rem 1rem);
     @media (max-width:886px){
         margin: 0;
     }
@@ -214,7 +214,7 @@ body{
 }
 
 .marg-rest{
-    margin: 1rem 0 0.4rem 1rem;
+    margin:unitize( 1rem 0 0.4rem 1rem);
 }
 
 //Footer
@@ -239,3 +239,4 @@ body{
     position: relative;
     left: 2.3rem;
 }
+// Menu  la palette du goût

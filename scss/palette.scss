@@ -10,29 +10,24 @@
 body{
    /* font-family: $text-font; */
 }
+li{
+    list-style: none;
+}
 // logo
-.head{
+header{
     width: 100%;
-    &__title{
+    nav{
+        width: 80%;
+        margin: 0 auto;
         text-align: center;
-        box-shadow: 1px 1px 5px rgba(#000, 1);
-        font-family: 'Shrikhand', sans-serif;
-        font-size: 2rem;
-        margin: 0;
-        padding: 15px;
-        @media screen and  (max-width: map-get($breakPoint, phone)){
-            .fa-arrow-left{
-                position: relative;
-                right: 60px;
-            }
+        position: relative;
+        .logo{
+            font-family: $logTitre-font;
         }
     }
-    &__description{
-        font-family: 'Shrikhand', sans-serif;
-        margin: 0;
-        background-color: #c9c7c750;
-        font-size: 2rem;
-        @include flexCenter(row);
+    .fa-arrow-left{
+        position: absolute;
+        left: 0;
+        top: 5px;
     }
 }
-

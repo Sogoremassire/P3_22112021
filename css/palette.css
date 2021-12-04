@@ -255,10 +255,21 @@ header nav {
 header nav .logo {
   font-family: "Shrikhand", sans-serif;
 }
+header nav h1 {
+  margin-bottom: 0;
+}
 header .fa-arrow-left {
   position: absolute;
   left: 0;
   top: 5px;
+}
+
+.image {
+  width: 100%;
+  height: 20rem;
+  background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=palette.css.map */

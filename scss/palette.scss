@@ -10,6 +10,10 @@
 body{
    /* font-family: $text-font; */
 }
+//*****************PAge1**************
+.primary-bloc{
+    width: 100%;
+}
 li{
     list-style: none;
 }
@@ -42,5 +46,89 @@ header{
     background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+}
+.bloc-menu{
+    width: 80%;
+    margin: 0 auto;
+}
+.main-bloc{
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    bottom: 90px;
+    border-radius: unitize(40);
+    h2{
+        margin: 0;
+        font-family: $logTitre-font;
+    }
+
+}
+// titre
+
+.title{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Réglage de coeur
+
+.fas, .far{
+    font-size: 2rem;
+}
+.heart{
+   cursor: pointer;
+    .far{
+        position: relative;
+        
+    }
+    .fas{
+        position: absolute;
+        background-image: linear-gradient(to top, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transition: .7s;
+        
+    }
+}
+.heart:hover .fas{
+    opacity: 1;
+}
+
+// filtre des Menus
+
+.bloc {
+    &__subtitle::after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: aquamarine;
+    display: block;
+    margin-top:.3rem ;
+    }
+}
+.menus{
+   
+    padding-right: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 2s;
     
+    &__title{
+        margin: .5rem 0 .5rem .5rem;
+        font-size: 1.2rem;
+    }
+    &__description{
+        margin: .5rem 0 .5rem .5rem;
+        color: rgba(0,0,0, .7);
+        position: relative;
+    }
+    &__prix{
+        position: absolute;
+        right: 0;
+        font-weight: bold;
+        color: #000;
+    }
 }

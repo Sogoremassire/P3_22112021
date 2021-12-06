@@ -423,19 +423,35 @@ body {
   margin-left: 1rem;
   text-decoration: none;
 }
-.card__heart {
-  position: absolute;
-  right: 0;
-  top: 0.9rem;
-  margin-right: 1.2rem;
-  font-size: 1.5rem;
-  border: none;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.2);
-  transition: 1s;
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.card__heart:hover {
-  color: #9356DC;
+
+.far, .fas {
+  font-size: 1.5rem;
+}
+
+.heart {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.heart .far {
+  position: relative;
+}
+.heart .fas {
+  position: absolute;
+  background-image: linear-gradient(to left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.heart:hover .fas {
+  opacity: 1;
 }
 
 .marg-rest {

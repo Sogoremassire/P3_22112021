@@ -113,6 +113,15 @@ header{
     font-weight: 400;
     
 }
+
+@media screen and (min-width:850px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
 .filtres-grid{
     display: grid;
     gap: 15px;

@@ -314,7 +314,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 882px) {
+@media (max-width: 953px) {
   .filtres__lists {
     flex-direction: column;
   }

@@ -13,6 +13,61 @@
 body{
    font-family: $text-font;
 }
+// *****************Reglage du leader***************
+.loader{
+    position: fixed;
+    inset: 0;
+    background-image:linear-gradient(135deg, #F5F7FA 50%, #C3CFE2 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    z-index: 1;
+    opacity: 0;
+    animation: loader-p 5s;
+}
+@keyframes loader-p {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 0;
+
+    }
+} 
+.loader > span{
+    background-color: purple;
+    display: inline-block;
+    margin: 0 8px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transform: translate3d(0);
+    opacity: 1;
+    animation: bouce .6s infinite alternate;
+}
+.loader > span:nth-child(2){
+    background-color: palevioletred;
+    animation-delay: .2s;
+}
+.loader > span:nth-child(3){
+    animation-delay: .4s;
+}
+
+@keyframes bouce {
+    to{
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -16px, 0);
+    }
+    
+   
+
+}
 
 // reglage de la position du menu
 

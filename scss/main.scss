@@ -26,16 +26,20 @@ body{
     z-index: 1;
     opacity: 0;
     animation: loader-p 5s;
+    visibility: hidden;
 }
 @keyframes loader-p {
     0%{
         opacity: 1;
+        visibility: visible;
     }
     50%{
         opacity: 0.9;
+        visibility: visible;
     }
     100%{
         opacity: 0;
+       
 
     }
 } 

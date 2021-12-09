@@ -142,7 +142,8 @@ body{
 // Reglage des filtres
 .filtres{
     display: block;
-    padding: 0 1rem;
+    margin-left: 0.8rem;
+    margin-bottom: 3.6rem;
     &__lists{
         counter-reset: step;
         margin: 0;
@@ -157,7 +158,7 @@ body{
         position: relative;
         list-style: none;
         padding: 1.5rem;
-        margin: unitize(1rem 1rem 1rem 0.75rem);
+        margin: unitize(1rem 1rem 0 0.75rem);
         box-shadow: unitize(0.25rem 0.25rem 0.5rem) rgb(0 0 0 / 13%);
         border-radius: unitize(1.25rem);
         display: flex;
@@ -165,6 +166,7 @@ body{
         align-items: center;
         flex-grow: 1;
         background: #F6F6F6;
+        transition: .5s;
     }
     &__icone{
         color: #7e7e7e;
@@ -183,25 +185,43 @@ body{
         position: absolute;
         left: unitize(-0.75rem);
     }
+    // hover sur les filtres
+    &__list:hover{
+        background-color:#F5EDFF;
+        cursor: pointer; 
+    }
+    
+    &__list:nth-child(3){
+        background-color:#F5EDFF;
+        cursor: pointer; 
+    }
 }
+.filtres__list:hover .filtres__icone{
+    color: $primary-color;
+}
+.fa-store{
+    color: $primary-color;
+}
+
+//***************   modification du contenu container    ******************
+
+.container{
+    padding: 2rem 1rem;
+}
+
+
+
 
 // restaurants
 
 .restaurants{
     background-color: #F6F6F6;
-    margin: unitize(2rem 1rem);
+    padding: unitize(2rem 1rem);
     @media (max-width:886px){
         margin: 0;
     }
 }
-.container{
-    max-width: 1280px;
-    margin: auto;
-    padding: 2.5rem;
-    @media (max-width:780px){
-       padding: 1.2rem;
-    }
-}
+
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -214,6 +234,7 @@ body{
     background-color: #FFF;
     border-radius: 1rem;
     padding-bottom: 1rem;
+    margin-bottom: 2rem;
     &__img-1{
         background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         background-size: 100%;
@@ -264,17 +285,17 @@ body{
     justify-content: space-between;
 
 }
-.far, .fas{
-    font-size: 1.5rem;
-}
+
 .heart{
     cursor: pointer;
     margin-right: 1rem;
 
     .far{
         position: relative;
+        font-size: 1.5rem;
     }
     .fas{
+        font-size: 1.5rem;
         position: absolute;
         background-image: linear-gradient(to left, $primary-color, $secondary-color );
         -webkit-background-clip: text;
@@ -297,11 +318,12 @@ body{
 .footer{
     background: #353535;
     padding: 2rem;
-    @media (max-width:846px){
-        padding: 0;
+    &__lists{
+        padding-left: 0;
     }
     &__list{
         list-style: none;
+        margin-bottom: .6rem;
     }
     &__lien{
         text-decoration: none;
@@ -312,7 +334,7 @@ body{
     font-family: 'Shrikhand', sans-serif;
     font-size: 1.3rem;
     position: relative;
-    left: 2.3rem;
+    left: 0rem;
 }
 
 

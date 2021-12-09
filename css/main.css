@@ -360,7 +360,8 @@ body {
 
 .filtres {
   display: block;
-  padding: 0 1rem;
+  margin-left: 0.8rem;
+  margin-bottom: 3.6rem;
 }
 .filtres__lists {
   counter-reset: step;
@@ -378,7 +379,7 @@ body {
   position: relative;
   list-style: none;
   padding: 1.5rem;
-  margin: 1rem 1rem 1rem 0.75rem;
+  margin: 1rem 1rem 0px 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   border-radius: 1.25rem;
   display: flex;
@@ -386,6 +387,7 @@ body {
   align-items: center;
   flex-grow: 1;
   background: #F6F6F6;
+  transition: 0.5s;
 }
 .filtres__icone {
   color: #7e7e7e;
@@ -404,25 +406,34 @@ body {
   position: absolute;
   left: -0.75rem;
 }
+.filtres__list:hover {
+  background-color: #F5EDFF;
+  cursor: pointer;
+}
+.filtres__list:nth-child(3) {
+  background-color: #F5EDFF;
+  cursor: pointer;
+}
+
+.filtres__list:hover .filtres__icone {
+  color: #9356DC;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.container {
+  padding: 2rem 1rem;
+}
 
 .restaurants {
   background-color: #F6F6F6;
-  margin: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 @media (max-width: 886px) {
   .restaurants {
     margin: 0;
-  }
-}
-
-.container {
-  max-width: 1280px;
-  margin: auto;
-  padding: 2.5rem;
-}
-@media (max-width: 780px) {
-  .container {
-    padding: 1.2rem;
   }
 }
 
@@ -441,6 +452,7 @@ body {
   background-color: #FFF;
   border-radius: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .card__img-1, .card__img-4, .card__img-3, .card__img-2 {
   background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -485,18 +497,16 @@ body {
   justify-content: space-between;
 }
 
-.far, .fas {
-  font-size: 1.5rem;
-}
-
 .heart {
   cursor: pointer;
   margin-right: 1rem;
 }
 .heart .far {
   position: relative;
+  font-size: 1.5rem;
 }
 .heart .fas {
+  font-size: 1.5rem;
   position: absolute;
   background-image: linear-gradient(to left, #9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -517,13 +527,12 @@ body {
   background: #353535;
   padding: 2rem;
 }
-@media (max-width: 846px) {
-  .footer {
-    padding: 0;
-  }
+.footer__lists {
+  padding-left: 0;
 }
 .footer__list {
   list-style: none;
+  margin-bottom: 0.6rem;
 }
 .footer__lien {
   text-decoration: none;
@@ -534,7 +543,7 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.3rem;
   position: relative;
-  left: 2.3rem;
+  left: 0rem;
 }
 
 /*# sourceMappingURL=main.css.map */

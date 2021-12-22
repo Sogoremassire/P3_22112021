@@ -21,4 +21,4 @@ body{background-color:pink}
 # P3_22112021
 
 
-[Lien OHMYFOOD]( https://sogoremassire.github.io/P3_22112021/)
+*Pour tester le site en ligne rapidement, veuillez cliquer sur *:[ohmyfood.sogoremassire.com]( https://sogoremassire.github.io/P3_22112021/)

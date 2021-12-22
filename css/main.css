@@ -474,7 +474,7 @@ body {
   padding-bottom: 1rem;
 }
 .card a:visited {
-  color: inherit;
+  color: #000;
 }
 .card a:active {
   color: blue;
